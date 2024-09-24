@@ -1,0 +1,414 @@
+const database = 'bd3_atv2';
+
+const collection = 'bd3_atv2_produtos';
+
+use(database);
+
+db[collection].insertMany(
+    [
+        {
+            "nome": "Produto A",
+            "valor": 29.99,
+            "quantidadeEstoque": 100,
+            "fabricante": "Fabricante X",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto A"
+        },
+        {
+            "nome": "Produto B",
+            "valor": 59.99,
+            "quantidadeEstoque": 50,
+            "fabricante": "Fabricante Y",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto B"
+        },
+        {
+            "nome": "Produto C",
+            "valor": 19.99,
+            "quantidadeEstoque": 200,
+            "fabricante": "Fabricante Z",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto C"
+        },
+        {
+            "nome": "Produto D",
+            "valor": 99.99,
+            "quantidadeEstoque": 30,
+            "fabricante": "Fabricante W",
+            "categoria": "Móveis",
+            "descricao": "Descrição do Produto D"
+        },
+        {
+            "nome": "Produto E",
+            "valor": 39.99,
+            "quantidadeEstoque": 75,
+            "fabricante": "Fabricante V",
+            "categoria": "Roupas",
+            "descricao": "Descrição do Produto E"
+        },
+        {
+            "nome": "Produto F",
+            "valor": 89.99,
+            "quantidadeEstoque": 20,
+            "fabricante": "Fabricante U",
+            "categoria": "Esportes",
+            "descricao": "Descrição do Produto F"
+        },
+        {
+            "nome": "Produto G",
+            "valor": 9.99,
+            "quantidadeEstoque": 300,
+            "fabricante": "Fabricante T",
+            "categoria": "Acessórios",
+            "descricao": "Descrição do Produto G"
+        },
+        {
+            "nome": "Produto H",
+            "valor": 15.99,
+            "quantidadeEstoque": 150,
+            "fabricante": "Fabricante S",
+            "categoria": "Livros",
+            "descricao": "Descrição do Produto H"
+        },
+        {
+            "nome": "Produto I",
+            "valor": 49.99,
+            "quantidadeEstoque": 60,
+            "fabricante": "Fabricante R",
+            "categoria": "Beleza",
+            "descricao": "Descrição do Produto I"
+        },
+        {
+            "nome": "Produto J",
+            "valor": 25.00,
+            "quantidadeEstoque": 80,
+            "fabricante": "Fabricante Q",
+            "categoria": "Calçados",
+            "descricao": "Descrição do Produto J"
+        },
+        {
+            "nome": "Produto K",
+            "valor": 45.50,
+            "quantidadeEstoque": 40,
+            "fabricante": "Fabricante P",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto K"
+        },
+        {
+            "nome": "Produto L",
+            "valor": 72.00,
+            "quantidadeEstoque": 90,
+            "fabricante": "Fabricante O",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto L"
+        },
+        {
+            "nome": "Produto M",
+            "valor": 33.99,
+            "quantidadeEstoque": 110,
+            "fabricante": "Fabricante N",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto M"
+        },
+        {
+            "nome": "Produto N",
+            "valor": 120.00,
+            "quantidadeEstoque": 25,
+            "fabricante": "Fabricante M",
+            "categoria": "Móveis",
+            "descricao": "Descrição do Produto N"
+        },
+        {
+            "nome": "Produto O",
+            "valor": 27.50,
+            "quantidadeEstoque": 70,
+            "fabricante": "Fabricante L",
+            "categoria": "Roupas",
+            "descricao": "Descrição do Produto O"
+        },
+        {
+            "nome": "Produto P",
+            "valor": 99.99,
+            "quantidadeEstoque": 15,
+            "fabricante": "Fabricante K",
+            "categoria": "Esportes",
+            "descricao": "Descrição do Produto P"
+        },
+        {
+            "nome": "Produto Q",
+            "valor": 19.00,
+            "quantidadeEstoque": 250,
+            "fabricante": "Fabricante J",
+            "categoria": "Acessórios",
+            "descricao": "Descrição do Produto Q"
+        },
+        {
+            "nome": "Produto R",
+            "valor": 29.99,
+            "quantidadeEstoque": 140,
+            "fabricante": "Fabricante I",
+            "categoria": "Livros",
+            "descricao": "Descrição do Produto R"
+        },
+        {
+            "nome": "Produto S",
+            "valor": 49.99,
+            "quantidadeEstoque": 60,
+            "fabricante": "Fabricante H",
+            "categoria": "Beleza",
+            "descricao": "Descrição do Produto S"
+        },
+        {
+            "nome": "Produto T",
+            "valor": 15.00,
+            "quantidadeEstoque": 180,
+            "fabricante": "Fabricante G",
+            "categoria": "Calçados",
+            "descricao": "Descrição do Produto T"
+        },
+        {
+            "nome": "Produto U",
+            "valor": 35.00,
+            "quantidadeEstoque": 30,
+            "fabricante": "Fabricante F",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto U"
+        },
+        {
+            "nome": "Produto V",
+            "valor": 75.00,
+            "quantidadeEstoque": 50,
+            "fabricante": "Fabricante E",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto V"
+        },
+        {
+            "nome": "Produto W",
+            "valor": 22.50,
+            "quantidadeEstoque": 100,
+            "fabricante": "Fabricante D",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto W"
+        },
+        {
+            "nome": "Produto X",
+            "valor": 150.00,
+            "quantidadeEstoque": 10,
+            "fabricante": "Fabricante C",
+            "categoria": "Móveis",
+            "descricao": "Descrição do Produto X"
+        },
+        {
+            "nome": "Produto Y",
+            "valor": 45.00,
+            "quantidadeEstoque": 85,
+            "fabricante": "Fabricante B",
+            "categoria": "Roupas",
+            "descricao": "Descrição do Produto Y"
+        },
+        {
+            "nome": "Produto Z",
+            "valor": 95.00,
+            "quantidadeEstoque": 35,
+            "fabricante": "Fabricante A",
+            "categoria": "Esportes",
+            "descricao": "Descrição do Produto Z"
+        },
+        {
+            "nome": "Produto AA",
+            "valor": 33.00,
+            "quantidadeEstoque": 120,
+            "fabricante": "Fabricante A",
+            "categoria": "Acessórios",
+            "descricao": "Descrição do Produto AA"
+        },
+        {
+            "nome": "Produto AB",
+            "valor": 17.99,
+            "quantidadeEstoque": 200,
+            "fabricante": "Fabricante B",
+            "categoria": "Livros",
+            "descricao": "Descrição do Produto AB"
+        },
+        {
+            "nome": "Produto AC",
+            "valor": 44.99,
+            "quantidadeEstoque": 60,
+            "fabricante": "Fabricante C",
+            "categoria": "Beleza",
+            "descricao": "Descrição do Produto AC"
+        },
+        {
+            "nome": "Produto AD",
+            "valor": 55.50,
+            "quantidadeEstoque": 40,
+            "fabricante": "Fabricante D",
+            "categoria": "Calçados",
+            "descricao": "Descrição do Produto AD"
+        },
+        {
+            "nome": "Produto AE",
+            "valor": 12.50,
+            "quantidadeEstoque": 180,
+            "fabricante": "Fabricante E",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto AE"
+        },
+        {
+            "nome": "Produto AF",
+            "valor": 79.99,
+            "quantidadeEstoque": 25,
+            "fabricante": "Fabricante F",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto AF"
+        },
+        {
+            "nome": "Produto AG",
+            "valor": 27.00,
+            "quantidadeEstoque": 90,
+            "fabricante": "Fabricante G",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto AG"
+        },
+        {
+            "nome": "Produto AH",
+            "valor": 98.00,
+            "quantidadeEstoque": 90,
+            "fabricante": "Fabricante H",
+            "categoria": "Brinquedos Novos",
+            "descricao": "Descrição do Produto AH"
+        },
+        {
+            "nome": "Produto AI",
+            "valor": 29.99,
+            "quantidadeEstoque": 100,
+            "fabricante": "Fabricante X",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto AI"
+        },
+        {
+            "nome": "Produto AJ",
+            "valor": 59.99,
+            "quantidadeEstoque": 50,
+            "fabricante": "Fabricante Y",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto AJ"
+        },
+        {
+            "nome": "Produto AK",
+            "valor": 19.99,
+            "quantidadeEstoque": 200,
+            "fabricante": "Fabricante Z",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto AK"
+        },
+        {
+            "nome": "Produto AL",
+            "valor": 99.99,
+            "quantidadeEstoque": 30,
+            "fabricante": "Fabricante W",
+            "categoria": "Móveis",
+            "descricao": "Descrição do Produto AL"
+        },
+        {
+            "nome": "Produto AM",
+            "valor": 39.99,
+            "quantidadeEstoque": 75,
+            "fabricante": "Fabricante V",
+            "categoria": "Roupas",
+            "descricao": "Descrição do Produto AM"
+        },
+        {
+            "nome": "Produto AN",
+            "valor": 89.99,
+            "quantidadeEstoque": 20,
+            "fabricante": "Fabricante U",
+            "categoria": "Esportes",
+            "descricao": "Descrição do Produto AN"
+        },
+        {
+            "nome": "Produto AO",
+            "valor": 9.99,
+            "quantidadeEstoque": 300,
+            "fabricante": "Fabricante T",
+            "categoria": "Acessórios",
+            "descricao": "Descrição do Produto AO"
+        },
+        {
+            "nome": "Produto AP",
+            "valor": 15.99,
+            "quantidadeEstoque": 150,
+            "fabricante": "Fabricante S",
+            "categoria": "Livros",
+            "descricao": "Descrição do Produto AP"
+        },
+        {
+            "nome": "Produto AQ",
+            "valor": 49.99,
+            "quantidadeEstoque": 60,
+            "fabricante": "Fabricante R",
+            "categoria": "Beleza",
+            "descricao": "Descrição do Produto AQ"
+        },
+        {
+            "nome": "Produto AR",
+            "valor": 25.00,
+            "quantidadeEstoque": 80,
+            "fabricante": "Fabricante Q",
+            "categoria": "Calçados",
+            "descricao": "Descrição do Produto AR"
+        },
+        {
+            "nome": "Produto AS",
+            "valor": 45.50,
+            "quantidadeEstoque": 40,
+            "fabricante": "Fabricante P",
+            "categoria": "Eletrônicos",
+            "descricao": "Descrição do Produto AS"
+        },
+        {
+            "nome": "Produto AT",
+            "valor": 72.00,
+            "quantidadeEstoque": 90,
+            "fabricante": "Fabricante O",
+            "categoria": "Eletrodomésticos",
+            "descricao": "Descrição do Produto AT"
+        },
+        {
+            "nome": "Produto AU",
+            "valor": 33.99,
+            "quantidadeEstoque": 110,
+            "fabricante": "Fabricante N",
+            "categoria": "Brinquedos",
+            "descricao": "Descrição do Produto AU"
+        },
+        {
+            "nome": "Produto AV",
+            "valor": 120.00,
+            "quantidadeEstoque": 25,
+            "fabricante": "Fabricante M",
+            "categoria": "Móveis",
+            "descricao": "Descrição do Produto AV"
+        },
+        {
+            "nome": "Produto AW",
+            "valor": 27.50,
+            "quantidadeEstoque": 70,
+            "fabricante": "Fabricante L",
+            "categoria": "Roupas",
+            "descricao": "Descrição do Produto AW"
+        },
+        {
+            "nome": "Produto AX",
+            "valor": 99.99,
+            "quantidadeEstoque": 15,
+            "fabricante": "Fabricante K",
+            "categoria": "Esportes",
+            "descricao": "Descrição do Produto AX"
+        }
+        
+        
+    ]
+    
+)
+    
